@@ -1,0 +1,11 @@
+.profile__edit-avatar {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+}

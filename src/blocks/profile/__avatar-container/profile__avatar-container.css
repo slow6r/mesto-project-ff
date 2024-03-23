@@ -1,0 +1,15 @@
+.profile__avatar-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  background: transparent;
+  border: 0;
+}
+
+.profile__avatar-container:hover .profile__edit-avatar {
+  display: block;
+}
+
+.profile__avatar-container:hover .profile__image {
+  filter: brightness(70%);
+}
