@@ -5,11 +5,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    main: './src/index.js'
+    main: './src/scripts/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
+    filename: 'main.js',
     publicPath: '',
   },
   mode: 'development',
@@ -33,6 +33,9 @@ module.exports = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, {
             loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
           },
           'postcss-loader'
         ]
